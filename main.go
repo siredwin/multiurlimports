@@ -3,7 +3,7 @@ package main
 import (
 	_ "github.com/siredwin/multiurlimports/app1" // app1 views from init
 	_ "github.com/siredwin/multiurlimports/app2" // app2 views from init
-	_ "github.com/siredwin/multiurlimports/app3" // app1 views from init
+	_ "github.com/siredwin/multiurlimports/app3" // app3 views from init
 	"github.com/labstack/echo/middleware"
 	"github.com/siredwin/multiurlimports/supercontext"
 )
