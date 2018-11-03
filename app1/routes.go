@@ -1,12 +1,10 @@
 package app1
 
 import (
-	"github.com/siredwin/multiurlimports/supercontext"
+	"github.com/labstack/echo"
 )
 
-func init(){
-	//Initiate the supercontext
-	e := supercontext.E
+func New(e *echo.Echo) {
 	// Name the routes for app1
 	app1routes := e.Group("/app1")
 	app1routes.Match([]string{"GET", "POST"}, "/view1", view1)
